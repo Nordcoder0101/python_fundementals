@@ -1,5 +1,6 @@
 class BankAccount:
-  def __init__(self, balance=0, interestRate=0.01):
+  def __init__(self, balance=0, interestRate=0.01, accountName='savings'):
+      self.name = accountName
       self.balance = balance
       self.interestRate = interestRate
 
@@ -23,8 +24,8 @@ class BankAccount:
       balance += (balance * amount)
       return self
 
-checking = BankAccount(1000000, .05)
-savings = BankAccount(1000000, .05)
+# checking = BankAccount(1000000, .05)
+# savings = BankAccount(1000000, .05)
 
-checking.deposit(500).deposit(600).deposit(300).withdraw(20000).display_account_info()
-savings.deposit(2000).deposit(4000).withdraw(10000).withdraw(10000).withdraw(5000000).display_account_info()
+# checking.deposit(500).deposit(600).deposit(300).withdraw(20000).display_account_info()
+# savings.deposit(2000).deposit(4000).withdraw(10000).withdraw(10000).withdraw(5000).display_account_info()
