@@ -24,6 +24,8 @@ class BankAccount:
       balance += (balance * amount)
       return self
 
+
+
 # checking = BankAccount(1000000, .05)
 # savings = BankAccount(1000000, .05)
 
