@@ -16,10 +16,10 @@ class User:
         return self
 
     def transfer_money(self, amount, recipiant):
-        self.account_balance -= amount
-        recipiant.account_balance += amount  
+        self.makeWithdrawl(amount)
+        recipiant.makeDeposit(amount)
         return self
-        
+
 greg = User("Greg", "nords3x4@gmail.com")
 joe = User("Joe", "joe@joeshmo.com")
 ned = User("Ned", "nedisneat@ned.com")
